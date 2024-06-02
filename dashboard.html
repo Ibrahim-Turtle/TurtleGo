@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleGo - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="title">TurtleGo</h1>
+        <div class="language-selector">
+            <button data-lang="en">EN</button>
+            <button data-lang="nl">NL</button>
+            <button data-lang="de">DE</button>
+        </div>
+        <button id="logout" data-i18n="logout">Logout</button>
+        <span id="usernameDisplay"></span>
+    </header>
+    <div class="container">
+        <div class="study-sets-container">
+            <h2 data-i18n="yourStudySets">Your Study Sets</h2>
+            <div id="studySets"></div>
+        </div>
+        <div class="study-set-form-container">
+            <h2 data-i18n="createStudySet">Create Study Set</h2>
+            <form id="studySetForm">
+                <input type="text" id="setName" placeholder="Set Name" required>
+                <textarea id="setContent" placeholder="Set Content (question|answer per line)" required></textarea>
+                <button type="submit" data-i18n="saveSetButton">Save Set</button>
+            </form>
+            <div id="formMessage"></div>
+        </div>
+        <div class="practice-sets-container">
+            <h2 data-i18n="practiceSets">Practice Sets</h2>
+            <div id="practiceSets"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TurtleGo. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

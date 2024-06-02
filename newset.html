@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyGo - New Study Set</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create New Study Set</h1>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="newset.html">Create New Study Set</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <form id="studySetForm">
+            <input type="text" id="setName" placeholder="Study Set Name" required>
+            <textarea id="setContent" placeholder="Enter terms and definitions separated by commas, e.g., Term1: Definition1, Term2: Definition2" required></textarea>
+            <button type="submit">Save Study Set</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

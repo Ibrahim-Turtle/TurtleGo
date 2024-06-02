@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleGo - Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="title">TurtleGo</h1>
+        <div class="language-selector">
+            <button data-lang="en">EN</button>
+            <button data-lang="nl">NL</button>
+            <button data-lang="de">DE</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="practice-container">
+            <h2 data-i18n="practiceSets">Practice Sets</h2>
+            <div id="questionContainer"></div>
+            <form id="answerForm">
+                <input type="text" id="userAnswer" placeholder="Your answer" required>
+                <button type="submit" data-i18n="submit">Submit</button>
+            </form>
+            <div id="practiceMessage"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TurtleGo. All rights reserved.</p>
+    </footer>
+    <script src="practice.js"></script>
+</body>
+</html>

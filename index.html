@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurtleGo - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="title">TurtleGo</h1>
+        <p data-i18n="subtitle">Your Ultimate Study Companion</p>
+        <div class="language-selector">
+            <button data-lang="en">EN</button>
+            <button data-lang="nl">NL</button>
+            <button data-lang="de">DE</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <h2 data-i18n="login">Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" data-i18n="loginButton">Login</button>
+            </form>
+            <div id="errorMessage" class="error-message"></div>
+            <div class="premium-login">
+                <h3 data-i18n="premiumLogin">Premium Login</h3>
+                <form id="premiumLoginForm">
+                    <input type="text" id="premiumUsername" placeholder="Premium Username" required>
+                    <input type="password" id="premiumPassword" placeholder="Premium Password" required>
+                    <button type="submit" data-i18n="premiumLoginButton">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="info-container">
+            <h2 data-i18n="aboutTitle">About TurtleGo</h2>
+            <p data-i18n="aboutText">TurtleGo is your personal study assistant, allowing you to create, manage, and review your study sets easily. Whether you're a student or a teacher, TurtleGo has the tools you need to succeed.</p>
+            <h3 data-i18n="newsTitle">Latest News</h3>
+            <ul>
+                <li data-i18n="news1">New feature: Share your study sets with friends!</li>
+                <li data-i18n="news2">Improved user interface for a better experience.</li>
+                <li data-i18n="news3">Mobile app coming soon!</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TurtleGo. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

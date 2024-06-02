@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.language-selector button:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.study-sets-container, .study-set-form-container, .practice-sets-container {
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.study-sets-container h2, .study-set-form-container h2, .practice-sets-container h2 {
+    margin-top: 0;
+}
+
+input, textarea {
+    display: block;
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5em 2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error-message, .practice-message {
+    color: red;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.premium-locked {
+    opacity: 0.5;
+    pointer-events: none;
+    position: relative;
+}
+
+.premium-locked::after {
+    content: '🔒';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: red;
+}
+
+.premium-locked-message {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.premium-locked:hover + .premium-locked-message {
+    display: block;
+}
